@@ -1,0 +1,72 @@
+/*remove channel icons and replace them with colored lines*/
+div {
+	--ch-text: #a833cc;
+	--ch-text-limited: #a833cc;
+	--ch-text-threads: #cc33bf;
+	--ch-text-nsfw: #cc3333;
+	--ch-announcements: #ffffff;
+	--ch-announcements-limited: #ffffff;
+	--ch-rules: #800080;
+	--ch-voice: #52d7e0;
+	--ch-voice-limited: #2981a3;
+	--ch-voice-locked: #2981a3;
+	--ch-forum: #4b9fff;
+	--ch-forum-limited: #4b9fff;
+	--ch-stage: #52d7e0;
+}
+.mainContentWithChannelEmoji-3a7jev [aria-label="Announcements"] { background-color: var(--ch-announcements); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Announcements (Limited)"] { background-color: var(--ch-announcements-limited); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Text"] { background-color: var(--ch-text) }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Text (Limited)"] { background-color: var(--ch-text-limited) }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Text (Active Threads)"] { background-color: var(--ch-text-threads) }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Text (Age-Restricted)"] { background-color: var(--ch-text-nsfw); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Voice"] { background-color: var(--ch-voice); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Voice (Limited)"] { background-color: var(--ch-voice-limited); }
+.mainContent-20q_Hp [aria-label="Voice (Locked)"] { background-color:  var(--ch-voice-locked); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Rules"] { background-color: var(--ch-rules); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Forum"] { background-color: var(--ch-forum); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Forum (Limited)"] { background-color: var(--ch-forum-limited); }
+.mainContentWithChannelEmoji-3a7jev [aria-label="Stage"] { background-color: var(--ch-stage); }
+
+.channelName-2TeYVY [aria-label="Announcements"] { background-color: var(--ch-announcements); }
+.channelName-2TeYVY [aria-label="Announcements (Limited)"] { background-color: var(--ch-announcements-limited); }
+.channelName-2TeYVY [aria-label="Text"] { background-color: var(--ch-text) }
+.channelName-2TeYVY [aria-label="Text (Limited)"] { background-color: var(--ch-text-limited) }
+.channelName-2TeYVY [aria-label="Text (Active Threads)"] { background-color: var(--ch-text-threads) }
+.channelName-2TeYVY [aria-label="Text (Age-Restricted)"] { background-color: var(--ch-text-nsfw); }
+.channelName-2TeYVY [aria-label="Voice"] { background-color: var(--ch-voice); }
+.channelName-2TeYVY [aria-label="Voice (Limited)"] { background-color: var(--ch-voice-limited); }
+.channelName-2TeYVY [aria-label="Rules"] { background-color: var(--ch-rules); }
+.channelName-2TeYVY [aria-label="Forum"] { background-color: var(--ch-forum); }
+.channelName-2TeYVY [aria-label="Forum (Limited)"] { background-color: var(--ch-forum-limited); }
+.channelName-2TeYVY [aria-label="Stage"] { background-color: var(--ch-stage); }
+/*unread notification*/
+svg.icon-2W8DHg {
+	visibility: hidden;
+}
+.iconContainer-21RCa3 {
+	width: 3px;
+	margin-right: 4px;
+	border-radius: 20%;
+}
+.unread-36eUEm {
+    background-color: #ffffff;
+    width: 8px;
+    height: 8px;
+    top: 13px;
+    margin-left: -4px !important;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+/* remove channel emojis */
+.channelEmoji-NJOZuV {
+  display: none;
+}
+.channelName-3KPsGw {
+  padding: 3px;
+}
+/* Overlay color on text */
+[id="channels"] [class^=emojiColorFill-] {
+  z-index: 1;
+}
